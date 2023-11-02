@@ -1,0 +1,122 @@
+/* Setter standard skrifttype for hele nettsiden */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hovedtekst{
+    background-color: #D28C4B;
+    height: 2rem;
+}
+
+h5{
+    text-align: left;
+    font-weight: 100;
+    color: #615B5D;
+    text-shadow: 2px 2px 4px #615B5D;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigasjon {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+
+.fa-cart-shopping, .fa-user{
+    margin: 10px;
+}
+
+.boxto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.søk {
+    display: flex;
+    justify-content: center;
+}
+
+/* Gjør logo-lenken uten understrek og sett inn farge */
+#logo {
+    text-decoration: none;
+    text-align: center;
+    color: #D28C4B;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.kategorier {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.kategorier a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navigasjon-produkt {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigasjon-bruker {
+    display: flex;
+    flex-direction: row;
+}
+
+.kjøp {
+    text-align: center;
+}
+
+footer img{
+    max-width: 100%;
+}
+
+main img{
+    max-width: 100%;
+}
+
+.profil {
+    text-align: center;
+}
+
+header
+
+/* Definerer et grid-container som inneholder header, main og footer */
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+/* Legger til litt padding til header, main og footer for mellomrom */
+header{
+    grid-column: 1/ span 1;
+    grid-row: 1/ span 1;
+}
+
+main{
+    grid-column: 1/ span 1;
+    grid-row: 2/ span 1;
+}
+
+footer{
+    grid-column: 1/ span 1;
+    grid-row: 3/ span 1;
+}
