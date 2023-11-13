@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--metadata start-->
+    <meta name="author" content="Makka Sugaipova">
+    <meta name="description" content="Bricks er sko for alle former og fasonger!">
+      <!-- Facebook meta -->
+      <meta property="og:title" content="comfy og trendy">
+      <meta property="og:url" content="https://itstud.hiof.no/~makkas/index.html">
+      <meta property="og:description" content="Comfy og trendy sko på vår nettside nå!">
+      <meta property="og:image" content="https://cdn.pixabay.com/photo/istockphoto-518372850-1024x1024.jpg">
+      <!-- Instagram meta -->
+      <meta property="og:title" content="comfy og trendy!">
+      <meta property="og:url" content="https://itstud.hiof.no/~makkas/index.html">
+      <meta property="og:description" content="Comfy og trendy sko på vår nettside nå!">
+      <meta property="og:image" content="https://cdn.pixabay.com/photo/istockphoto-518372850-1024x1024.jpg">
+       <!--avslutt meta-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font/css/all.css" type="text/css">
     <!--her legger jeg inn ikoner fra fontawesome-->
@@ -22,29 +36,47 @@
         <section>
             <nav>
                 <ul class="navigasjon-produkt">
-                    <li><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a></li>
+                    <i class="fa-solid fa-arrow-left"></i></a></li>
                 </ul>
             </nav>
         </section>
         <section class="boxto">
             <i class="fa-solid fa-bars"></i>
             <nav class="søk"> 
-                <input class="søkinput" type="text" placeholder="søk">
+                <label for="input-field" class="input">søk her</label>
+                <input class="søkinput" type="text" aria-label="søk">
                 <button class="søkbutton" style="border:none"><i class="fa-solid fa-magnifying-glass"></i></button>
             </nav>
         </section>
     </header>
     <main>
+        <section class="produkt.sko">
         <img src="img/istockphoto-518372850-1024x1024.jpg" alt="produkt">
         <!--Bilde er hentet fra istockPhoto. Credit: Sashul9-->
-
-        <section>
-            <h5>Trendy nike</h5>
+    </section>
+        <section class="trendy sneaker">
+            <h3>Trendy sneaker</h3>
+        </section>
+        <section class="produkt.intro">
+            <h4>Our most popular sneakers are back on stock!
+                Hurry the item sells out quick!</h4>
+        </section>
+        <section class="microdata">
+            <div itemscope itemtype="https://schema.org/product">
+                <link itemprop="url" href="produkt.html"><span itemprop="shoe item">Limited Edition</span>
+                <div itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <meta property="priceCurrency" content="NOK">
+                        <span itemprop="price" content="600">600 kr</span>
+                </div>
+                <div itemprop="microdata.li" itemtype="https://schema.org/Product">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <section>
-            <h4 class="kjøp">Kjøpt nå!</h4>
+            <a class="kjøp" href="produkt.html"><h3>Click on the link to purchase now</h3></a>
         </section>
     </footer>
     </div>

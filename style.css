@@ -6,15 +6,15 @@ body {
 }
 
 .hovedtekst{
-    background-color: #5e340d;
+    background-color: #D28C4B;
     height: 2rem;
 }
 
 h5{
     text-align: left;
     font-weight: 100;
-    color: #1b1717;
-    text-shadow: 2px 2px 4px #ffffff;
+    color: #615B5D;
+    text-shadow: 2px 2px 4px #615B5D;
 }
 
 .box{
@@ -44,7 +44,7 @@ h5{
 }
 
 .søk {
-    display: none;
+    display: flex;
     justify-content: center;
 }
 
@@ -52,7 +52,7 @@ h5{
 #logo {
     text-decoration: none;
     text-align: center;
-    color: #5e340d;
+    color: #D28C4B;
     font-size: 2rem;
     font-weight: 200;
 }
@@ -76,32 +76,26 @@ li {
     flex-direction: row;
 }
 
+.navigasjon-bruker {
+    display: flex;
+    flex-direction: row;
+}
+
 .kjøp {
     text-align: center;
 }
 
 .produkt.sko {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
 }
 
-.tabell{
-    border-collapse: collapse;
-    margin: 25px 0px;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+.intro.produkt {
+        text-decoration: none;
+        display: flex;
+        font-size: 2rem;
+        font-weight: 200;
+    justify-content: space-around;
 }
-
-.tabell thead tr{
-    background-color: rgba(126, 255, 150, 0.806);
-    color: black;
-    text-align: left;
-}
-.tabell tbody tr{
-    text-align: left;
-}
-
 
 footer img{
     max-width: 100%;
@@ -134,76 +128,11 @@ main{
     grid-row: 2/ span 1;
 }
 
+.kjop {
+    text-align: center;
+}
+
 footer{
     grid-column: 1/ span 1;
     grid-row: 3/ span 1;
 }
-
-.gulboks{
-    background-color: #fafaf9;
-    border-radius: 10px;
-    margin: 20px;
-    text-align: center;
-}
-
-.topp{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 50px;
-    align-items: center;
-    padding: 0;
-    border-bottom: solid;
-    border-color: #615B5D;
-    border-width: 2px;
-}
-
-.topp h1{
-    font-weight: 100;
-}
-
-.sections{
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.seksjon{
-    background-color: #ba6c22;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px, 0px;
-    margin: 20px;
-}
-
-.seksjon h2{
-    font-weight: 100;
-    padding-left: 20px;
-    margin: 10px;
-}
-
-.fa-arrow-left-long{
-    background-color: #bcbcbc;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.navigasjon-bruker{
-    padding: 10px;
-}
-
-.box-bruker{
-    display: flex;
-    justify-content: center;
-}
-
-.hei{
-    display: flex;
-    align-items: flex-start;
-    padding-left: 5px;
-    color: #ac9fa4;
-}
-
